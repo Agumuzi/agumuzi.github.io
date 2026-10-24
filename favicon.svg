@@ -1,7 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" role="img" aria-label="Agumuzi">
-<defs><linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#193c50"/><stop offset="1" stop-color="#0b1c2a"/></linearGradient></defs>
-<rect width="80" height="80" rx="19" fill="url(#b)"/>
-<rect x="2" y="2" width="76" height="76" rx="17" fill="none" stroke="#408e95" stroke-width="2"/>
-<text x="21" y="56" font-family="Georgia,serif" font-size="61" font-weight="700" fill="#f0fafb">a</text>
-<circle cx="61" cy="54" r="5" fill="#86e6c9"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 256 256" role="img" aria-label="Agumuzi A monogram">
+  <defs>
+    <linearGradient id="shell" x1="0.1" y1="0" x2="0.92" y2="1">
+      <stop offset="0" stop-color="#16445D"/>
+      <stop offset="0.40" stop-color="#102A48"/>
+      <stop offset="1" stop-color="#091426"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#63E9CC"/>
+      <stop offset="0.48" stop-color="#449FD4"/>
+      <stop offset="1" stop-color="#3973F0"/>
+    </linearGradient>
+    <linearGradient id="letter" x1="0" y1="0" x2="0.8" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#DAEFFF"/>
+    </linearGradient>
+    <linearGradient id="beacon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5CF0C5"/>
+      <stop offset="1" stop-color="#51B8DD"/>
+    </linearGradient>
+    <clipPath id="clip"><rect x="8" y="8" width="240" height="240" rx="56"/></clipPath>
+    <radialGradient id="glow"><stop offset="0" stop-color="#3389B8" stop-opacity="0.34"/><stop offset="1" stop-color="#3389B8" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect x="5" y="5" width="246" height="246" rx="59" fill="#07111F"/>
+  <rect x="8" y="8" width="240" height="240" rx="56" fill="url(#shell)" stroke="url(#rim)" stroke-width="3"/>
+  <rect x="14" y="14" width="228" height="228" rx="50" fill="none" stroke="#D6F9FF" stroke-opacity="0.11" stroke-width="1.5"/>
+  <ellipse cx="122" cy="87" rx="88" ry="91" fill="url(#glow)" clip-path="url(#clip)"/>
+  <path fill="url(#letter)" fill-rule="evenodd" d="M64 186 L109 77 Q114 65 127 65 L130 65 Q142 65 147 77 L192 186 L161 186 L151 159 L104 159 L94 186 Z M114 134 L141 134 L128 97 Z"/>
+  <path d="M104 158.7 H151" stroke="#D7F5FF" stroke-opacity="0.3" stroke-width="1"/>
+  <circle cx="128" cy="210" r="10.4" fill="url(#beacon)"/>
+  <circle cx="125" cy="207" r="3" fill="#D6FFF5" opacity="0.43"/>
 </svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" role="img" aria-label="Agumuzi">
+<defs><linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#193c50"/><stop offset="1" stop-color="#0b1c2a"/></linearGradient></defs>
+<rect width="80" height="80" rx="19" fill="url(#b)"/>
+<rect x="2" y="2" width="76" height="76" rx="17" fill="none" stroke="#408e95" stroke-width="2"/>
+<text x="21" y="56" font-family="Georgia,serif" font-size="61" font-weight="700" fill="#f0fafb">a</text>
+<circle cx="61" cy="54" r="5" fill="#86e6c9"/>
+</svg>

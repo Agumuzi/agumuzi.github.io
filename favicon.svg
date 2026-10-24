@@ -1,32 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 256 256" role="img" aria-label="Agumuzi A monogram">
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 256 256" role="img" aria-label="Agumuzi capital A with a lowercase i integrated inside">
   <defs>
-    <linearGradient id="shell" x1="0.1" y1="0" x2="0.92" y2="1">
-      <stop offset="0" stop-color="#16445D"/>
-      <stop offset="0.40" stop-color="#102A48"/>
+    <linearGradient id="shell" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#174860"/>
+      <stop offset=".52" stop-color="#102744"/>
       <stop offset="1" stop-color="#091426"/>
     </linearGradient>
     <linearGradient id="rim" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#63E9CC"/>
-      <stop offset="0.48" stop-color="#449FD4"/>
+      <stop offset=".52" stop-color="#449FD4"/>
       <stop offset="1" stop-color="#3973F0"/>
     </linearGradient>
-    <linearGradient id="letter" x1="0" y1="0" x2="0.8" y2="1">
+    <linearGradient id="letter" x1=".17" y1=".11" x2=".87" y2="1">
       <stop offset="0" stop-color="#FFFFFF"/>
-      <stop offset="1" stop-color="#DAEFFF"/>
+      <stop offset=".62" stop-color="#D9EEFF"/>
+      <stop offset="1" stop-color="#8FC0FF"/>
     </linearGradient>
-    <linearGradient id="beacon" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#5CF0C5"/>
-      <stop offset="1" stop-color="#51B8DD"/>
+    <linearGradient id="inside-i" x1="0" y1="0" x2=".7" y2="1">
+      <stop offset="0" stop-color="#6AF5D0"/>
+      <stop offset=".54" stop-color="#43DCD0"/>
+      <stop offset="1" stop-color="#277DF4"/>
     </linearGradient>
+    <radialGradient id="glow"><stop offset="0" stop-color="#3A88C1" stop-opacity=".3"/><stop offset="1" stop-color="#3A88C1" stop-opacity="0"/></radialGradient>
     <clipPath id="clip"><rect x="8" y="8" width="240" height="240" rx="56"/></clipPath>
-    <radialGradient id="glow"><stop offset="0" stop-color="#3389B8" stop-opacity="0.34"/><stop offset="1" stop-color="#3389B8" stop-opacity="0"/></radialGradient>
   </defs>
-  <rect x="5" y="5" width="246" height="246" rx="59" fill="#07111F"/>
+  <rect x="5" y="5" width="246" height="246" rx="60" fill="#07111F"/>
   <rect x="8" y="8" width="240" height="240" rx="56" fill="url(#shell)" stroke="url(#rim)" stroke-width="3"/>
-  <rect x="14" y="14" width="228" height="228" rx="50" fill="none" stroke="#D6F9FF" stroke-opacity="0.11" stroke-width="1.5"/>
-  <ellipse cx="122" cy="87" rx="88" ry="91" fill="url(#glow)" clip-path="url(#clip)"/>
-  <path fill="url(#letter)" fill-rule="evenodd" d="M64 186 L109 77 Q114 65 127 65 L130 65 Q142 65 147 77 L192 186 L161 186 L151 159 L104 159 L94 186 Z M114 134 L141 134 L128 97 Z"/>
-  <path d="M104 158.7 H151" stroke="#D7F5FF" stroke-opacity="0.3" stroke-width="1"/>
-  <circle cx="128" cy="210" r="10.4" fill="url(#beacon)"/>
-  <circle cx="125" cy="207" r="3" fill="#D6FFF5" opacity="0.43"/>
+  <rect x="14" y="14" width="228" height="228" rx="50" fill="none" stroke="#D6F9FF" stroke-opacity=".11" stroke-width="1.5"/>
+  <ellipse cx="125" cy="85" rx="100" ry="100" fill="url(#glow)" clip-path="url(#clip)"/>
+  <!-- Letter A: thick geometric diagonal stems create an open inner cavity for the lowercase i. -->
+  <path d="M43 202 L100 67 Q105 55 118 55 H138 Q151 55 156 67 L213 202 Q219 216 205 218 H181 Q173 218 170 210 L139 121 Q134 105 128 105 Q122 105 117 121 L86 210 Q83 218 75 218 H51 Q37 216 43 202Z" fill="url(#letter)"/>
+  <!-- Letter i: mint dot and rounded vertical stroke, centered inside the capital A. -->
+  <circle cx="128" cy="135" r="14.5" fill="url(#inside-i)"/>
+  <rect x="114.5" y="158" width="27" height="61" rx="13.5" fill="url(#inside-i)"/>
+  <circle cx="123" cy="130" r="4" fill="#E2FFF7" opacity=".2"/>
 </svg>

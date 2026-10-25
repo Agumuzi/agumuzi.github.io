@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0b1825">
+  <meta name="robots" content="noindex, nofollow">
   <meta name="description" content="Agumuzi is an independent developer building FinTrack, Currency Tracker and CR-Hopper. Thoughtful Mac apps and practical network tools.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Agumuzi — Software shaped by daily life">
@@ -18,6 +19,7 @@
 /* answered: no fabricated claims or testimonials. Focus, reduced-motion, breakpoints and no-JS English fallback supplied. */
 :root{
  --ink:#10232f;--ink-2:#3d5460;--navy:#0b1825;--navy-2:#142837;--paper:#eef2f1;--paper-2:#e4eae8;--mint:#8cddca;--mint-dark:#2e796f;--line:#cbd8d8;--line-dark:#314452;--white:#f7fbfa;--muted:#a8bbc5;--shade:#20343f;--signal:#ccece1;--focus:#d7f6a8;--cr-dark:#0d1820;--fin-ground:#dce8e5;--currency-ground:#e4ebf0;
+ --visual-shadow:#213b4650;
  --font-display:ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-serif;
  --font-body:ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-serif;
  --container:1280px;--gutter:clamp(20px,5vw,70px);
@@ -36,7 +38,7 @@ p,h1,h2,h3,figure{margin:0}
 h1,h2,h3{overflow-wrap:break-word;min-width:0;text-wrap:balance;font-family:var(--font-display)}
 p{text-wrap:pretty}
 [lang="en"] .zh,[lang="zh-CN"] .en{display:none!important}
-.container{width:min(var(--container),calc(100% - var(--gutter)*2));margin-inline:auto}
+.container{width:min(var(--container),calc(100% - var(--gutter) - var(--gutter)));margin-inline:auto}
 .skip{position:absolute;top:0;left:var(--space-3);z-index:99;background:var(--focus);color:var(--navy);padding:var(--space-2);transform:translateY(-150%)}
 .skip:focus{transform:none}
 .preview-strip{background:var(--mint);color:var(--navy)}
@@ -69,7 +71,7 @@ p{text-wrap:pretty}
 .hero-visual{min-width:0}
 .hero-visual figure{position:relative}
 .hero-picture{background:var(--fin-ground);padding:var(--space-4);border-radius:2px;overflow:hidden}
-.hero-picture img{width:100%;max-height:338px;object-fit:contain;filter:drop-shadow(0 10px 12px #213b4650)}
+.hero-picture img{width:100%;max-height:338px;object-fit:contain;filter:drop-shadow(0 10px 12px var(--visual-shadow))}
 .figure-caption{display:flex;justify-content:space-between;gap:var(--space-2);font-size:13px;color:var(--muted);margin-top:var(--space-3)}
 .figure-caption span:last-child{color:var(--mint)}
 .hero-ledger{display:grid;grid-template-columns:1.1fr repeat(3,1fr);align-items:stretch;border-top:1px solid var(--line-dark)}
@@ -106,14 +108,14 @@ p{text-wrap:pretty}
 .case-fin{padding:var(--space-6);background:var(--fin-ground)}
 .case-fin .case-top{margin-bottom:var(--space-6)}
 .case-fin .project-art{padding:var(--space-3)}
-.case-fin .project-art img{max-height:410px;filter:drop-shadow(0 12px 14px #213b4640)}
+.case-fin .project-art img{max-height:410px;filter:drop-shadow(0 12px 14px var(--visual-shadow))}
 .case-fin .action-primary{background:var(--navy);color:var(--white)}
 .case-fin .action-primary:hover{background:var(--navy-2)}
 .case-currency{border-top:1px solid var(--line);margin-top:var(--space-7);padding-block:var(--space-7)}
 .case-currency .case-top{margin-bottom:var(--space-6)}
 .case-currency .case-grid{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr)}
 .currency-stage{display:flex;align-items:center;justify-content:center;gap:var(--space-4);min-height:410px;background:var(--currency-ground);padding:var(--space-5);overflow:hidden}
-.currency-stage img{max-height:345px;width:auto;max-width:57%;object-fit:contain;filter:drop-shadow(0 12px 14px #213b4640)}
+.currency-stage img{max-height:345px;width:auto;max-width:57%;object-fit:contain;filter:drop-shadow(0 12px 14px var(--visual-shadow))}
 .currency-stage img:last-child{max-height:300px;max-width:43%;transform:translateY(var(--space-4))}
 .case-cr{background:var(--cr-dark);color:var(--white);padding:var(--space-6);overflow:hidden}
 .case-cr .case-top{color:var(--muted);margin-bottom:var(--space-6)}

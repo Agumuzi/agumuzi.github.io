@@ -10,6 +10,7 @@
   <meta property="og:description" content="Local-first Mac apps and practical network tools. Discover FinTrack, Currency Tracker and CR-Hopper.">
   <meta property="og:url" content="https://agumuzi.github.io/">
   <meta name="twitter:card" content="summary">
+  <meta name="color-scheme" content="dark light">
   <title>Agumuzi — Independent Software</title>
   <link rel="icon" href="./favicon.ico?v=20261028b" type="image/x-icon" sizes="any">
   <link rel="icon" href="./favicon.png?v=20261028b" type="image/png" sizes="32x32">
@@ -18,7 +19,7 @@
   <script defer src="./site.js"></script>
 </head>
 <body>
-  <a class="skip-link" href="#projects">Skip to selected projects</a>
+  <a class="skip-link" href="#projects"><span class="en">Skip to selected projects</span><span class="zh">跳转至项目</span><span class="ru">Перейти к проектам</span></a>
   <header class="site-header" id="top">
     <div class="nav-wrap">
       <a class="brand" href="#top" aria-label="Agumuzi — back to top">
@@ -26,19 +27,23 @@
         <span class="brand-name">Agumuz<span class="brand-i">i</span></span>
       </a>
       <nav class="main-nav" aria-label="Main navigation">
-        <a href="#projects"><span class="en">Projects</span><span class="zh">项目</span></a>
-        <a href="#approach"><span class="en">Approach</span><span class="zh">理念</span></a>
-        <a href="#about"><span class="en">About</span><span class="zh">关于</span></a>
+        <a href="#projects"><span class="en">Projects</span><span class="zh">项目</span><span class="ru">Проекты</span></a>
+        <a href="#approach"><span class="en">Approach</span><span class="zh">理念</span><span class="ru">Подход</span></a>
+        <a href="#about"><span class="en">About</span><span class="zh">关于</span><span class="ru">Обо мне</span></a>
       </nav>
       <div class="nav-actions">
         <a class="github-link" href="https://github.com/Agumuzi" target="_blank" rel="noopener noreferrer" aria-label="Visit Agumuzi on GitHub">
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .8a11.2 11.2 0 0 0-3.54 21.83c.56.1.76-.24.76-.54v-2.08c-3.1.67-3.76-1.32-3.76-1.32-.51-1.3-1.25-1.65-1.25-1.65-1.02-.7.08-.69.08-.69 1.13.08 1.72 1.16 1.72 1.16 1 .1.77 2.5 2.25 1.8.1-.74.4-1.25.72-1.54-2.47-.28-5.06-1.24-5.06-5.52 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.11-2.96 0 0 .94-.3 3.08 1.14A10.7 10.7 0 0 1 12 7.05c.95 0 1.9.13 2.8.38 2.14-1.44 3.07-1.14 3.07-1.14.62 1.54.24 2.68.12 2.96.72.78 1.14 1.78 1.14 3 0 4.29-2.6 5.24-5.08 5.52.4.34.76 1.02.76 2.06v2.26c0 .3.2.65.77.54A11.2 11.2 0 0 0 12 .8Z"/></svg>
-          <span class="en">GitHub</span><span class="zh">GitHub</span>
+          <span class="en">GitHub</span><span class="zh">GitHub</span><span class="ru">GitHub</span>
           <span aria-hidden="true">↗</span>
         </a>
-        <button id="lang-toggle" class="lang-toggle" type="button" aria-label="切换为简体中文" aria-pressed="false">
-          <span class="lang-option lang-option-en">EN</span><span class="lang-separator">/</span><span class="lang-option lang-option-zh">中</span>
-        </button>
+        <div class="language-switch" role="group" aria-label="Language / 语言 / Язык">
+          <button class="language-choice" type="button" data-language="en" lang="en" aria-label="English" aria-pressed="true">EN</button>
+          <span class="language-divider" aria-hidden="true">/</span>
+          <button class="language-choice" type="button" data-language="zh-CN" lang="zh-CN" aria-label="简体中文" aria-pressed="false">中</button>
+          <span class="language-divider" aria-hidden="true">/</span>
+          <button class="language-choice" type="button" data-language="ru" lang="ru" aria-label="Русский" aria-pressed="false">РУ</button>
+        </div>
       </div>
     </div>
   </header>
@@ -48,40 +53,40 @@
       <div class="hero-glow hero-glow-a" aria-hidden="true"></div><div class="hero-glow hero-glow-b" aria-hidden="true"></div>
       <div class="hero-inner">
         <div class="hero-copy">
-          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span><span class="en">INDEPENDENT DEVELOPER / SOFTWARE & SYSTEMS</span><span class="zh">独立开发者 / 软件与系统设计</span></p>
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span><span class="en">INDEPENDENT DEVELOPER / SOFTWARE & SYSTEMS</span><span class="zh">独立开发者 / 软件与系统设计</span><span class="ru">НЕЗАВИСИМЫЙ РАЗРАБОТЧИК / ПО И СИСТЕМЫ</span></p>
           <h1 id="hero-title">
             <span class="en">Useful by design.<br><span class="hero-heading-soft">Built for</span> <span class="gradient-type">real life.</span></span>
-            <span class="zh">为实用而设计。<br><span class="hero-heading-soft">为真实场景</span><span class="gradient-type">而构建。</span></span>
+            <span class="zh">为实用而设计。<br><span class="hero-heading-soft">为真实场景</span><span class="gradient-type">而构建。</span></span><span class="ru">Сделано с умом.<br><span class="hero-heading-soft">Для</span> <span class="gradient-type">реальной жизни.</span></span>
           </h1>
           <p class="hero-description en">Native Mac apps. Small network utilities. Carefully considered workflows. I turn everyday problems into tools that are clear, personal and built to last.</p>
-          <p class="hero-description zh">原生 Mac 应用、实用网络工具与自动化工作流。把日常使用中遇到的问题，做成清晰、可维护、经得起实际检验的软件。</p>
+          <p class="hero-description zh">原生 Mac 应用、实用网络工具与自动化工作流。把日常使用中遇到的问题，做成清晰、可维护、经得起实际检验的软件。</p><p class="hero-description ru">Нативные приложения для Mac, сетевые утилиты и продуманные рабочие процессы. Превращаю повседневные задачи в понятные инструменты, которыми удобно пользоваться каждый день.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#projects"><span class="en">Explore the projects</span><span class="zh">浏览我的项目</span><span aria-hidden="true">↗</span></a>
-            <a class="button button-quiet" href="https://github.com/Agumuzi" target="_blank" rel="noopener noreferrer"><span class="en">View GitHub profile</span><span class="zh">访问 GitHub 主页</span> <span aria-hidden="true">↗</span></a>
+            <a class="button button-primary" href="#projects"><span class="en">Explore the projects</span><span class="zh">浏览我的项目</span><span class="ru">Мои проекты</span><span aria-hidden="true">↗</span></a>
+            <a class="button button-quiet" href="https://github.com/Agumuzi" target="_blank" rel="noopener noreferrer"><span class="en">View GitHub profile</span><span class="zh">访问 GitHub 主页</span><span class="ru">Профиль на GitHub</span> <span aria-hidden="true">↗</span></a>
           </div>
-          <div class="hero-foot"><span class="hero-foot-line" aria-hidden="true"></span><span class="en">LOCAL-FIRST WHERE PRACTICAL <span class="foot-divider">/</span> INDEPENDENT PROJECTS</span><span class="zh">本地优先 <span class="foot-divider">/</span> 独立开发与持续迭代</span></div>
+          <div class="hero-foot"><span class="hero-foot-line" aria-hidden="true"></span><span class="en">LOCAL-FIRST WHERE PRACTICAL <span class="foot-divider">/</span> INDEPENDENT PROJECTS</span><span class="zh">本地优先 <span class="foot-divider">/</span> 独立开发与持续迭代</span><span class="ru">ПО ВОЗМОЖНОСТИ — ЛОКАЛЬНО <span class="foot-divider">/</span> НЕЗАВИСИМЫЕ ПРОЕКТЫ</span></div>
         </div>
         <div class="hero-display">
           <div class="display-grid" aria-hidden="true"></div>
           <div class="display-halo" aria-hidden="true"></div>
           <div class="portfolio-panel">
-            <div class="panel-toolbar"><div class="mac-dots" aria-hidden="true"><i></i><i></i><i></i></div><span>AGUMUZI / PROJECT INDEX</span><span class="panel-version">2026</span></div>
+            <div class="panel-toolbar"><div class="mac-dots" aria-hidden="true"><i></i><i></i><i></i></div><span class="en">AGUMUZI / PROJECT INDEX</span><span class="zh">AGUMUZI / 项目目录</span><span class="ru">AGUMUZI / ПРОЕКТЫ</span><span class="panel-version">2026</span></div>
             <div class="portfolio-panel-body">
               <p class="panel-overline en">SELECTED PROJECTS <span>03</span></p>
-              <p class="panel-overline zh">项目一览 <span>03</span></p>
-              <a class="panel-row" href="#fintrack"><span class="panel-icon icon-fin"><img src="https://raw.githubusercontent.com/Agumuzi/FinTrack/main/website/assets/app-icon.png" alt=""></span><span class="panel-main"><strong>FinTrack</strong><small>Personal finance for Mac</small></span><span class="panel-arr">↗</span></a>
-              <a class="panel-row" href="#currency"><span class="panel-icon icon-currency"><img src="https://raw.githubusercontent.com/Agumuzi/Currency-Tracker/gh-pages/assets/app-icon.png" alt=""></span><span class="panel-main"><strong>Currency Tracker</strong><small>Exchange rates in your menu bar</small></span><span class="panel-arr">↗</span></a>
-              <a class="panel-row" href="#crhopper"><span class="panel-icon icon-cr"><img src="https://raw.githubusercontent.com/Agumuzi/crhopper/main/docs/assets/rocket.svg" alt=""></span><span class="panel-main"><strong>CR-Hopper</strong><small>Curated public proxy feeds</small></span><span class="panel-arr">↗</span></a>
+              <p class="panel-overline zh">项目一览 <span>03</span></p><p class="panel-overline ru">ИЗБРАННЫЕ ПРОЕКТЫ <span>03</span></p>
+              <a class="panel-row" href="#fintrack"><span class="panel-icon icon-fin"><img src="https://raw.githubusercontent.com/Agumuzi/FinTrack/main/website/assets/app-icon.png" alt=""></span><span class="panel-main"><strong>FinTrack</strong><small class="en">Personal finance for Mac</small><small class="zh">Mac 个人财务管理</small><small class="ru">Личные финансы для Mac</small></span><span class="panel-arr">↗</span></a>
+              <a class="panel-row" href="#currency"><span class="panel-icon icon-currency"><img src="https://raw.githubusercontent.com/Agumuzi/Currency-Tracker/gh-pages/assets/app-icon.png" alt=""></span><span class="panel-main"><strong>Currency Tracker</strong><small class="en">Exchange rates in your menu bar</small><small class="zh">菜单栏汇率工具</small><small class="ru">Курсы валют в строке меню</small></span><span class="panel-arr">↗</span></a>
+              <a class="panel-row" href="#crhopper"><span class="panel-icon icon-cr"><img src="https://raw.githubusercontent.com/Agumuzi/crhopper/main/docs/assets/rocket.svg" alt=""></span><span class="panel-main"><strong>CR-Hopper</strong><small class="en">Curated public proxy feeds</small><small class="zh">公开代理订阅整理</small><small class="ru">Подписки на публичные прокси</small></span><span class="panel-arr">↗</span></a>
             </div>
-            <div class="panel-bottom"><span><span class="pulse-dot"></span> BUILT • TESTED • REFINED</span><span>AG / 001</span></div>
+            <div class="panel-bottom"><span><span class="pulse-dot"></span> <span class="en">BUILT • TESTED • REFINED</span><span class="zh">构建 • 测试 • 优化</span><span class="ru">КОД • ТЕСТЫ • ПРАВКИ</span></span><span>AG / 001</span></div>
           </div>
           <div class="floating-badge floating-top creator-chip"><img src="./assets/avatar.webp" width="40" height="40" alt=""><span class="creator-copy"><small class="en">INDEPENDENT MAKER</small><small class="zh">独立开发者</small><strong>Agumuz<span class="brand-i">i</span></strong></span></div>
-          <div class="floating-badge floating-bottom"><span class="badge-symbol badge-green">◇</span><span class="en">Modular by design</span><span class="zh">模块化设计</span></div>
+          <div class="floating-badge floating-bottom"><span class="badge-symbol badge-green">◇</span><span class="en">Modular by design</span><span class="zh">模块化设计</span><span class="ru">Модульный подход</span></div>
         </div>
       </div>
       <div class="hero-bottom">
-        <span class="en">THREE PROJECTS. DIFFERENT NEEDS. ONE APPROACH.</span><span class="zh">三个项目，不同用途，同一种开发理念。</span>
-        <a href="#projects" class="scroll-cue"><span class="en">SCROLL TO EXPLORE</span><span class="zh">向下浏览</span> <span aria-hidden="true">↓</span></a>
+        <span class="en">THREE PROJECTS. DIFFERENT NEEDS. ONE APPROACH.</span><span class="zh">三个项目，不同用途，同一种开发理念。</span><span class="ru">ТРИ ПРОЕКТА. РАЗНЫЕ ЗАДАЧИ. ЕДИНЫЙ ПОДХОД.</span>
+        <a href="#projects" class="scroll-cue"><span class="en">SCROLL TO EXPLORE</span><span class="zh">向下浏览</span><span class="ru">ЛИСТАЙТЕ ВНИЗ</span> <span aria-hidden="true">↓</span></a>
       </div>
     </section>
 
@@ -89,25 +94,25 @@
       <div class="container intro-strip-inner">
         <div class="strip-portrait"><img src="./assets/avatar.webp" width="110" height="110" alt="Illustrated portrait of Agumuzi" loading="lazy"></div>
         <p class="en">I'm Agumuzi, an independent maker interested in the intersection of <strong>software, systems and everyday life.</strong> My projects start with something I actually want to use — then grow through testing, iteration and careful decisions.</p>
-        <p class="zh">我是 Agumuzi，一名关注<strong>软件、系统与真实生活</strong>的独立开发者。项目通常从自己遇到的具体需求出发，通过反复测试、验证与迭代逐渐成形。</p>
-        <a href="#approach" class="strip-link"><span class="en">My approach</span><span class="zh">开发理念</span> ↗</a>
+        <p class="zh">我是 Agumuzi，一名关注<strong>软件、系统与真实生活</strong>的独立开发者。项目通常从自己遇到的具体需求出发，通过反复测试、验证与迭代逐渐成形。</p><p class="ru">Я Agumuzi, независимый разработчик на пересечении <strong>программ, систем и повседневной жизни.</strong> Мои проекты начинаются с реальных задач, а затем развиваются благодаря тестированию, итерациям и продуманным решениям.</p>
+        <a href="#approach" class="strip-link"><span class="en">My approach</span><span class="zh">开发理念</span><span class="ru">Мой подход</span> ↗</a>
       </div>
     </section>
 
     <section class="work-section" id="projects" aria-labelledby="projects-heading">
       <div class="container">
-        <div class="section-top"><div><p class="section-index">01 <span>/</span> SELECTED WORK</p><h2 id="projects-heading"><span class="en">Made to be used.</span><span class="zh">真正拿来使用的作品。</span></h2></div><p class="section-aside en">Independent products with their own purpose, visual language and release cycle.</p><p class="section-aside zh">各自拥有独立的设计语言、使用场景和更新节奏。</p></div>
+        <div class="section-top"><div><p class="section-index">01 <span>/</span> <span class="en">SELECTED WORK</span><span class="zh">精选项目</span><span class="ru">ПРОЕКТЫ</span></p><h2 id="projects-heading"><span class="en">Made to be used.</span><span class="zh">真正拿来使用的作品。</span><span class="ru">Создано для дела.</span></h2></div><p class="section-aside en">Independent products with their own purpose, visual language and release cycle.</p><p class="section-aside zh">各自拥有独立的设计语言、使用场景和更新节奏。</p><p class="section-aside ru">Независимые проекты с собственными задачами, стилем и циклом обновлений.</p></div>
 
         <article class="feature feature-fin" id="fintrack" aria-labelledby="fintrack-title">
           <div class="feature-copy">
-            <div class="feature-tagline"><span class="feature-count">01 / 03</span><span class="category en">NATIVE macOS APP</span><span class="category zh">原生 macOS 应用</span></div>
-            <div class="feature-logo-heading"><img src="https://raw.githubusercontent.com/Agumuzi/FinTrack/main/website/assets/app-icon.png" width="72" height="72" alt="FinTrack official app icon" loading="lazy"><div><span class="feature-kicker en">PERSONAL FINANCE</span><span class="feature-kicker zh">个人财务管理</span><h3 id="fintrack-title">FinTrack<span class="feature-period">.</span></h3></div></div>
+            <div class="feature-tagline"><span class="feature-count">01 / 03</span><span class="category en">NATIVE macOS APP</span><span class="category zh">原生 macOS 应用</span><span class="category ru">НАТИВНОЕ ПРИЛОЖЕНИЕ macOS</span></div>
+            <div class="feature-logo-heading"><img src="https://raw.githubusercontent.com/Agumuzi/FinTrack/main/website/assets/app-icon.png" width="72" height="72" alt="FinTrack official app icon" loading="lazy"><div><span class="feature-kicker en">PERSONAL FINANCE</span><span class="feature-kicker zh">个人财务管理</span><span class="feature-kicker ru">ЛИЧНЫЕ ФИНАНСЫ</span><h3 id="fintrack-title">FinTrack<span class="feature-period">.</span></h3></div></div>
             <p class="feature-lead en">A calmer way to stay on top of your money.</p>
-            <p class="feature-lead zh">让个人财务变得清晰、有序。</p>
+            <p class="feature-lead zh">让个人财务变得清晰、有序。</p><p class="feature-lead ru">Финансы под контролем — без лишнего шума.</p>
             <p class="feature-text en">A native Mac workspace for transactions, accounts, deposits, budgets and goals. Designed for everyday use, with multiple currencies and local data control.</p>
-            <p class="feature-text zh">原生 Mac 财务工作台，集中管理交易、账户、存款、预算与财务目标；支持多币种，重视本地数据控制与真实使用体验。</p>
-            <div class="feature-pills"><span>macOS</span><span>SwiftUI</span><span class="en">Multi-currency</span><span class="zh">多币种</span><span>Local-first</span></div>
-            <div class="feature-actions"><a class="project-button" href="https://agumuzi.github.io/FinTrack/" target="_blank" rel="noopener noreferrer"><span class="en">Explore FinTrack</span><span class="zh">访问 FinTrack 官网</span> <span aria-hidden="true">↗</span></a><a class="project-text-link" href="https://github.com/Agumuzi/FinTrack" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
+            <p class="feature-text zh">原生 Mac 财务工作台，集中管理交易、账户、存款、预算与财务目标；支持多币种，重视本地数据控制与真实使用体验。</p><p class="feature-text ru">Нативное приложение для Mac: операции, счета, вклады, бюджеты и цели в одном месте. Несколько валют и контроль над локальными данными.</p>
+            <div class="feature-pills"><span>macOS</span><span>SwiftUI</span><span class="en">Multi-currency</span><span class="zh">多币种</span><span class="ru">Мультивалютность</span><span class="non-ru">Local-first</span><span class="ru">Локальные данные</span></div>
+            <div class="feature-actions"><a class="project-button" href="https://agumuzi.github.io/FinTrack/" target="_blank" rel="noopener noreferrer"><span class="en">Explore FinTrack</span><span class="zh">访问 FinTrack 官网</span><span class="ru">Открыть FinTrack</span> <span aria-hidden="true">↗</span></a><a class="project-text-link" href="https://github.com/Agumuzi/FinTrack" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
           </div>
           <div class="feature-art feature-art-fin">
             <div class="art-subtitle">FINTRACK / macOS</div>
@@ -118,14 +123,14 @@
 
         <article class="feature feature-currency" id="currency" aria-labelledby="currency-title">
           <div class="feature-copy">
-            <div class="feature-tagline"><span class="feature-count">02 / 03</span><span class="category en">MENU BAR UTILITY</span><span class="category zh">菜单栏工具</span></div>
-            <div class="feature-logo-heading"><img src="https://raw.githubusercontent.com/Agumuzi/Currency-Tracker/gh-pages/assets/app-icon.png" width="72" height="72" alt="Currency Tracker official app icon" loading="lazy"><div><span class="feature-kicker en">EXCHANGE RATES</span><span class="feature-kicker zh">汇率追踪工具</span><h3 id="currency-title">Currency<br>Tracker<span class="feature-period">.</span></h3></div></div>
+            <div class="feature-tagline"><span class="feature-count">02 / 03</span><span class="category en">MENU BAR UTILITY</span><span class="category zh">菜单栏工具</span><span class="category ru">УТИЛИТА ДЛЯ СТРОКИ МЕНЮ</span></div>
+            <div class="feature-logo-heading"><img src="https://raw.githubusercontent.com/Agumuzi/Currency-Tracker/gh-pages/assets/app-icon.png" width="72" height="72" alt="Currency Tracker official app icon" loading="lazy"><div><span class="feature-kicker en">EXCHANGE RATES</span><span class="feature-kicker zh">汇率追踪工具</span><span class="feature-kicker ru">КУРСЫ ВАЛЮТ</span><h3 id="currency-title">Currency<br>Tracker<span class="feature-period">.</span></h3></div></div>
             <p class="feature-lead en">Exchange rates, right where you work.</p>
-            <p class="feature-lead zh">汇率就在菜单栏，触手可及。</p>
+            <p class="feature-lead zh">汇率就在菜单栏，触手可及。</p><p class="feature-lead ru">Курсы валют — прямо в строке меню.</p>
             <p class="feature-text en">Scan the currency pairs that matter, open history charts, convert values quickly, and configure alerts — all from a compact macOS menu bar workflow.</p>
-            <p class="feature-text zh">从菜单栏快速查看常用货币对，展开历史走势、进行即时换算、配置汇率提醒。将日常操作集中在轻量的原生界面中。</p>
-            <div class="feature-pills"><span>macOS</span><span class="en">Menu bar</span><span class="zh">菜单栏</span><span class="en">11 languages</span><span class="zh">11 种语言</span><span>Charts & Alerts</span></div>
-            <div class="feature-actions"><a class="project-button" href="https://agumuzi.github.io/Currency-Tracker/" target="_blank" rel="noopener noreferrer"><span class="en">Explore Currency Tracker</span><span class="zh">访问 Currency Tracker 官网</span> <span aria-hidden="true">↗</span></a><a class="project-text-link" href="https://github.com/Agumuzi/Currency-Tracker" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
+            <p class="feature-text zh">从菜单栏快速查看常用货币对，展开历史走势、进行即时换算、配置汇率提醒。将日常操作集中在轻量的原生界面中。</p><p class="feature-text ru">Отслеживайте нужные валютные пары, смотрите графики, быстро конвертируйте суммы и настраивайте уведомления — в компактном приложении для строки меню macOS.</p>
+            <div class="feature-pills"><span>macOS</span><span class="en">Menu bar</span><span class="zh">菜单栏</span><span class="ru">Строка меню</span><span class="en">11 languages</span><span class="zh">11 种语言</span><span class="ru">11 языков</span><span class="non-ru">Charts & Alerts</span><span class="ru">Графики и оповещения</span></div>
+            <div class="feature-actions"><a class="project-button" href="https://agumuzi.github.io/Currency-Tracker/" target="_blank" rel="noopener noreferrer"><span class="en">Explore Currency Tracker</span><span class="zh">访问 Currency Tracker 官网</span><span class="ru">Открыть Currency Tracker</span> <span aria-hidden="true">↗</span></a><a class="project-text-link" href="https://github.com/Agumuzi/Currency-Tracker" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
           </div>
           <div class="feature-art feature-art-currency">
             <div class="currency-globe" aria-hidden="true"></div>
@@ -137,14 +142,14 @@
 
         <article class="feature feature-cr" id="crhopper" aria-labelledby="cr-title">
           <div class="feature-copy">
-            <div class="feature-tagline"><span class="feature-count">03 / 03</span><span class="category en">NETWORK TOOL</span><span class="category zh">网络工具</span></div>
-            <div class="feature-logo-heading"><img src="https://raw.githubusercontent.com/Agumuzi/crhopper/main/docs/assets/rocket.svg" width="72" height="72" alt="CR-Hopper original pixel rocket logo" loading="lazy"><div><span class="feature-kicker en">PUBLIC PROXY FEEDS</span><span class="feature-kicker zh">公开代理订阅</span><h3 id="cr-title">CR-Hopper<span class="feature-period">_</span></h3></div></div>
+            <div class="feature-tagline"><span class="feature-count">03 / 03</span><span class="category en">NETWORK TOOL</span><span class="category zh">网络工具</span><span class="category ru">СЕТЕВОЙ ИНСТРУМЕНТ</span></div>
+            <div class="feature-logo-heading"><img src="https://raw.githubusercontent.com/Agumuzi/crhopper/main/docs/assets/rocket.svg" width="72" height="72" alt="CR-Hopper original pixel rocket logo" loading="lazy"><div><span class="feature-kicker en">PUBLIC PROXY FEEDS</span><span class="feature-kicker zh">公开代理订阅</span><span class="feature-kicker ru">ПУБЛИЧНЫЕ ПРОКСИ-ПОДПИСКИ</span><h3 id="cr-title">CR-Hopper<span class="feature-period">_</span></h3></div></div>
             <p class="feature-lead en">From scattered feeds to one clear format.</p>
-            <p class="feature-lead zh">让分散的公开订阅更容易使用。</p>
+            <p class="feature-lead zh">让分散的公开订阅更容易使用。</p><p class="feature-lead ru">Разрозненные источники — единый формат.</p>
             <p class="feature-text en">Collects and prepares public third-party proxy entries into subscription formats for Hiddify, Mihomo and Clash-compatible clients.</p>
-            <p class="feature-text zh">整理公开第三方代理来源，将其转换并发布为适用于 Hiddify、Mihomo 和 Clash 兼容客户端的订阅格式。</p>
-            <div class="feature-pills"><span>Hiddify</span><span>Mihomo</span><span>Clash</span><span class="en">Public feeds</span><span class="zh">公开订阅</span></div>
-            <div class="feature-actions"><a class="project-button" href="https://agumuzi.github.io/crhopper/" target="_blank" rel="noopener noreferrer"><span class="en">Explore CR-Hopper</span><span class="zh">访问 CR-Hopper 官网</span> <span aria-hidden="true">↗</span></a><a class="project-text-link" href="https://github.com/Agumuzi/crhopper" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
+            <p class="feature-text zh">整理公开第三方代理来源，将其转换并发布为适用于 Hiddify、Mihomo 和 Clash 兼容客户端的订阅格式。</p><p class="feature-text ru">Собирает и преобразует публичные прокси-узлы сторонних источников в подписки для Hiddify, Mihomo и клиентов, совместимых с Clash.</p>
+            <div class="feature-pills"><span>Hiddify</span><span>Mihomo</span><span>Clash</span><span class="en">Public feeds</span><span class="zh">公开订阅</span><span class="ru">Публичные подписки</span></div>
+            <div class="feature-actions"><a class="project-button" href="https://agumuzi.github.io/crhopper/" target="_blank" rel="noopener noreferrer"><span class="en">Explore CR-Hopper</span><span class="zh">访问 CR-Hopper 官网</span><span class="ru">Открыть CR-Hopper</span> <span aria-hidden="true">↗</span></a><a class="project-text-link" href="https://github.com/Agumuzi/crhopper" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
           </div>
           <div class="feature-art feature-art-cr">
             <div class="cr-grid" aria-hidden="true"></div>
@@ -153,41 +158,41 @@
             <div class="terminal-flow" aria-label="Publication process: collect, filter, prepare and publish">
               <p><span class="terminal-prompt">&gt;</span> <span>collect</span> <b>→</b> <span>filter</span> <b>→</b> <span>prepare</span> <b>→</b> <span>publish</span></p>
               <div class="terminal-hint en">WORKFLOW OVERVIEW · NOT A LIVE STATUS DISPLAY</div>
-              <div class="terminal-hint zh">流程示意 · 非实时运行状态</div>
+              <div class="terminal-hint zh">流程示意 · 非实时运行状态</div><div class="terminal-hint ru">СХЕМА ПРОЦЕССА · НЕ ОТОБРАЖАЕТ ТЕКУЩИЙ СТАТУС</div>
             </div>
             <span class="art-corner-label">PIXEL / NETWORK / 03</span>
           </div>
         </article>
         <p class="project-disclaimer en">These are independent projects with different requirements and release schedules. CR-Hopper republishes third-party public nodes: their availability, privacy and safety are not guaranteed. See the individual repositories for details.</p>
-        <p class="project-disclaimer zh">各项目独立发布维护，具体要求和限制以对应仓库为准。CR-Hopper 使用第三方公开节点，不保证可用性、隐私或安全性。</p>
+        <p class="project-disclaimer zh">各项目独立发布维护，具体要求和限制以对应仓库为准。CR-Hopper 使用第三方公开节点，不保证可用性、隐私或安全性。</p><p class="project-disclaimer ru">Это независимые проекты с разными требованиями и циклами обновления. CR-Hopper публикует прокси-узлы из сторонних открытых источников; их доступность, конфиденциальность и безопасность не гарантируются. Подробности — в репозиториях.</p>
       </div>
     </section>
 
     <section class="approach" id="approach" aria-labelledby="approach-heading">
       <div class="container">
-        <div class="approach-heading"><div><p class="section-index">02 <span>/</span> THE APPROACH</p><h2 id="approach-heading"><span class="en">Good software is a<br><em>process, not a screenshot.</em></span><span class="zh">好的软件来自<br><em>持续验证，而不止于截图。</em></span></h2></div><p class="en">I care more about how something behaves after months of use than how impressive it looks on day one.</p><p class="zh">比起软件第一天看起来多漂亮，我更在意它使用几个月之后，是否依旧可靠、好用、容易维护。</p></div>
+        <div class="approach-heading"><div><p class="section-index">02 <span>/</span> <span class="en">THE APPROACH</span><span class="zh">开发理念</span><span class="ru">ПОДХОД</span></p><h2 id="approach-heading"><span class="en">Good software is a<br><em>process, not a screenshot.</em></span><span class="zh">好的软件来自<br><em>持续验证，而不止于截图。</em></span><span class="ru">Хорошее ПО — это<br><em>процесс, а не скриншот.</em></span></h2></div><p class="en">I care more about how something behaves after months of use than how impressive it looks on day one.</p><p class="zh">比起软件第一天看起来多漂亮，我更在意它使用几个月之后，是否依旧可靠、好用、容易维护。</p><p class="ru">Для меня важнее, как программа работает спустя месяцы, чем насколько эффектно она выглядит в первый день.</p></div>
         <div class="principle-grid">
-          <div class="principle"><div class="principle-head"><span>01</span><span>↗</span></div><h3><span class="en">Local-first</span><span class="zh">本地优先</span></h3><p class="en">Keep data and essential workflows under the user's control whenever practical.</p><p class="zh">在可行的情况下，让数据和关键工作流尽可能保留在用户自己的设备上。</p></div>
-          <div class="principle"><div class="principle-head"><span>02</span><span>⌘</span></div><h3><span class="en">Modular systems</span><span class="zh">模块化系统</span></h3><p class="en">Clear boundaries make components replaceable, faults easier to isolate, and maintenance less fragile.</p><p class="zh">明确模块边界，使组件可替换、问题可隔离，降低长期维护成本。</p></div>
-          <div class="principle"><div class="principle-head"><span>03</span><span>◎</span></div><h3><span class="en">Real-world iteration</span><span class="zh">真实场景迭代</span></h3><p class="en">Observe problems, build deliberately, test the result and refine what actually matters.</p><p class="zh">从实际问题出发，有目的地构建、验证结果，并持续改进真正重要的细节。</p></div>
+          <div class="principle"><div class="principle-head"><span>01</span><span>↗</span></div><h3><span class="en">Local-first</span><span class="zh">本地优先</span><span class="ru">Локальные данные</span></h3><p class="en">Keep data and essential workflows under the user's control whenever practical.</p><p class="zh">在可行的情况下，让数据和关键工作流尽可能保留在用户自己的设备上。</p><p class="ru">По возможности данные и ключевые процессы должны оставаться под контролем пользователя.</p></div>
+          <div class="principle"><div class="principle-head"><span>02</span><span>⌘</span></div><h3><span class="en">Modular systems</span><span class="zh">模块化系统</span><span class="ru">Модульные системы</span></h3><p class="en">Clear boundaries make components replaceable, faults easier to isolate, and maintenance less fragile.</p><p class="zh">明确模块边界，使组件可替换、问题可隔离，降低长期维护成本。</p><p class="ru">Чёткие границы позволяют заменять компоненты, проще находить неполадки и снижать хрупкость системы.</p></div>
+          <div class="principle"><div class="principle-head"><span>03</span><span>◎</span></div><h3><span class="en">Real-world iteration</span><span class="zh">真实场景迭代</span><span class="ru">Итерации на практике</span></h3><p class="en">Observe problems, build deliberately, test the result and refine what actually matters.</p><p class="zh">从实际问题出发，有目的地构建、验证结果，并持续改进真正重要的细节。</p><p class="ru">Находить реальные проблемы, осознанно разрабатывать, проверять результат и улучшать то, что действительно важно.</p></div>
         </div>
-        <div class="build-line"><span class="en">OBSERVE</span><span class="zh">发现</span><i></i><span class="en">DESIGN</span><span class="zh">设计</span><i></i><span class="en">BUILD</span><span class="zh">构建</span><i></i><span class="en">VERIFY</span><span class="zh">验证</span><i></i><span class="en">REFINE</span><span class="zh">迭代</span></div>
+        <div class="build-line"><span class="en">OBSERVE</span><span class="zh">发现</span><span class="ru">НАБЛЮДАТЬ</span><i></i><span class="en">DESIGN</span><span class="zh">设计</span><span class="ru">ПРОЕКТИРОВАТЬ</span><i></i><span class="en">BUILD</span><span class="zh">构建</span><span class="ru">СОЗДАВАТЬ</span><i></i><span class="en">VERIFY</span><span class="zh">验证</span><span class="ru">ПРОВЕРЯТЬ</span><i></i><span class="en">REFINE</span><span class="zh">迭代</span><span class="ru">УЛУЧШАТЬ</span></div>
       </div>
     </section>
     <section class="closing" aria-labelledby="closing-heading">
       <div class="container closing-inner">
-        <p class="section-index">03 <span>/</span> KEEP BUILDING</p>
-        <h2 id="closing-heading"><span class="en">Simple to use.<br><span>Worth keeping.</span></span><span class="zh">用起来简单。<br><span>值得长期保留。</span></span></h2>
-        <p class="en">Follow the code, explore the projects, or check back as they evolve.</p><p class="zh">浏览项目源码、查看产品介绍，或关注它们之后的演进。</p>
-        <a class="button button-primary" href="https://github.com/Agumuzi" target="_blank" rel="noopener noreferrer"><span class="en">Visit GitHub</span><span class="zh">访问 GitHub</span> <span aria-hidden="true">↗</span></a>
+        <p class="section-index">03 <span>/</span> <span class="en">KEEP BUILDING</span><span class="zh">持续构建</span><span class="ru">РАЗВИТИЕ</span></p>
+        <h2 id="closing-heading"><span class="en">Simple to use.<br><span>Worth keeping.</span></span><span class="zh">用起来简单。<br><span>值得长期保留。</span></span><span class="ru">Просто пользоваться.<br><span>Надолго в работе.</span></span></h2>
+        <p class="en">Follow the code, explore the projects, or check back as they evolve.</p><p class="zh">浏览项目源码、查看产品介绍，或关注它们之后的演进。</p><p class="ru">Изучайте исходный код, знакомьтесь с проектами и следите за их развитием.</p>
+        <a class="button button-primary" href="https://github.com/Agumuzi" target="_blank" rel="noopener noreferrer"><span class="en">Visit GitHub</span><span class="zh">访问 GitHub</span><span class="ru">Перейти на GitHub</span> <span aria-hidden="true">↗</span></a>
       </div>
     </section>
   </main>
   <footer class="site-footer">
     <div class="container footer-inner">
       <a href="#top" class="footer-brand"><img class="footer-avatar" src="./assets/avatar.webp" width="27" height="27" alt=""><span>Agumuz<span class="brand-i">i</span></span></a>
-      <span class="footer-copyright">© 2026 Agumuzi · <span class="en">Independent projects</span><span class="zh">独立开发项目</span></span>
-      <div class="footer-links"><a href="#projects"><span class="en">Projects</span><span class="zh">项目</span></a><a href="https://github.com/Agumuzi" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="#top"><span class="en">Back to top ↑</span><span class="zh">返回顶部 ↑</span></a></div>
+      <span class="footer-copyright">© 2026 Agumuzi · <span class="en">Independent projects</span><span class="zh">独立开发项目</span><span class="ru">Независимые проекты</span></span>
+      <div class="footer-links"><a href="#projects"><span class="en">Projects</span><span class="zh">项目</span><span class="ru">Проекты</span></a><a href="https://github.com/Agumuzi" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="#top"><span class="en">Back to top ↑</span><span class="zh">返回顶部 ↑</span><span class="ru">Наверх ↑</span></a></div>
     </div>
   </footer>
 </body>

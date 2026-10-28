@@ -238,3 +238,59 @@ html[lang="en"] .zh{display:none!important}html[lang="zh-CN"] .en{display:none!i
 @media(prefers-reduced-motion:reduce){
   .brand-icon,.feature,.principle{transition:none}
 }
+
+
+/* Three-language portfolio: English (default), 简体中文, русский */
+html[lang="en"] .ru,
+html[lang="zh-CN"] .ru,
+html[lang="ru"] .zh,
+html[lang="ru"] .en,
+html[lang="ru"] .non-ru {display:none!important}
+.language-switch{
+  display:inline-flex;align-items:center;justify-content:center;gap:2px;
+  padding:3px 6px;min-height:37px;
+  background:#132638;border:1px solid #39536b;border-radius:9px;flex:none;
+}
+.language-switch:hover{border-color:#19c9d7}
+.language-choice{
+  display:inline-flex;align-items:center;justify-content:center;
+  min-height:28px;padding:4px 6px;min-width:23px;
+  border:0;border-radius:5px;background:transparent;color:#829db2;
+  cursor:pointer;font-size:12px;font-weight:750;line-height:1.2;
+  transition:color .2s,background .2s;
+}
+.language-choice:hover{color:#e9f9ff;background:#ffffff0b}
+.language-choice[aria-pressed="true"]{
+  color:#e9faff;background:rgba(15,201,218,.15);
+}
+.language-choice:focus-visible{outline:2px solid #36d8d4;outline-offset:1px}
+.language-divider{color:#4c6d84;font-size:11px;user-select:none}
+html[lang="ru"] .hero h1 > .ru{font-size:.78em;letter-spacing:-.055em;line-height:1.16}
+html[lang="ru"] .approach-heading h2 > .ru{font-size:.88em;line-height:1.2}
+html[lang="ru"] .closing h2 > .ru{font-size:.84em;line-height:1.2}
+html[lang="ru"] .panel-main small.ru{font-size:10px;line-height:1.5}
+html[lang="ru"] .section-top .section-aside.ru{max-width:310px}
+html[lang="ru"] .feature-lead.ru{font-size:19px}
+html[lang="ru"] .feature-pills .ru{white-space:normal}
+html[lang="ru"] .build-line{letter-spacing:.025em;gap:12px}
+@media(max-width:890px){
+ html[lang="ru"] .hero h1 > .ru{font-size:.77em}
+ html[lang="ru"] .approach-heading h2 > .ru{font-size:.86em}
+}
+@media(max-width:620px){
+ .language-switch{min-height:32px;padding:2px 3px;gap:1px}
+ .language-choice{min-height:27px;min-width:21px;padding:4px;font-size:11px}
+ .language-divider{font-size:10px}
+ .github-link > span.en,.github-link > span.zh,.github-link > span.ru{display:none!important}
+ html[lang="ru"] .hero h1 > .ru{font-size:.76em;line-height:1.18}
+ html[lang="ru"] .approach-heading h2 > .ru{font-size:.84em}
+ html[lang="ru"] .closing h2 > .ru{font-size:.83em}
+ html[lang="ru"] .build-line{flex-wrap:wrap;justify-content:center;gap:8px 11px;line-height:1.6}
+ html[lang="ru"] .build-line i{min-width:8px;flex:0 0 8px}
+ html[lang="ru"] .panel-main small.ru{font-size:9px}
+ html[lang="ru"] .feature-pills .ru{font-size:10px}
+}
+@media(max-width:380px){
+ .nav-actions{gap:7px}
+ .brand-name{font-size:16px}
+}

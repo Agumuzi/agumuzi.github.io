@@ -187,6 +187,8 @@ html[lang="en"] .zh{display:none!important}html[lang="zh-CN"] .en{display:none!i
 .creator-chip .creator-copy {display:flex;flex-direction:column;gap:2px;line-height:1.2}
 .creator-chip .creator-copy small {font:700 9px/1.3 ui-monospace,Menlo,monospace;letter-spacing:.075em;color:#8eafc1}
 .creator-chip .creator-copy strong {font-size:17px;font-weight:820;color:#edf9ff;letter-spacing:-.04em}
+html[lang="ru"] .floating-top.creator-chip {min-width:244px}
+.creator-chip .creator-copy small.ru {font-size:8px;letter-spacing:.035em;white-space:nowrap}
 .creator-chip .creator-copy strong .brand-i {font-size:inherit}
 .intro-strip{
   background:linear-gradient(100deg,#0c1b2e,#0a2334 52%,#081b29);

@@ -26,6 +26,12 @@ This repository is the **single source of truth for the personal website**. GitH
 
 To test changes before publishing, inspect `index.html` locally. The site does not require npm, a bundler, a backend, or a paid hosting account. Verify external GitHub-hosted screenshots and all links when editing project showcases.
 
+## License & Brand Rights
+
+Original website source code in this repository is available under [PolyForm Noncommercial 1.0.0](LICENSE): permitted noncommercial uses include study, modification, and sharing; commercial use requires separate authorization. This is source-available, not OSI open source.
+
+**The original Agumuzi logo, personal site mark (`favicon.svg`), product logos, application icons, original screenshots, illustrations, and promotional artwork are not granted for reuse.** See [Brand & Visual Assets](ASSETS-LICENSE.md). Artwork sourced from linked project repositories remains subject to their own asset notices; third-party marks retain their owners' rights. The site's original written biography and project descriptions are not a grant to impersonate or republish the Agumuzi identity.
+
 ## Principles
 
 Local-first when practical · modular architecture · iterative real-world testing.
